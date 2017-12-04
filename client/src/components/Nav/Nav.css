@@ -1,0 +1,19 @@
+.navbar {
+	background-color: #454545;
+	border: 2px;
+	border-color: FF9420;
+	color: #FF9420 !important;
+	font-weight: bold;
+}
+.navbar-brand:hover .navbar-inverse{
+	background-color: #A8A8A8 !important;
+	border: 0px;
+	color: #FF9420;
+	font-weight: bold;
+}
+
+a:link :hover {
+	color: #FF9420;
+	font-weight: bold;
+  text-shadow: 1px 1px #FF9420;
+}
