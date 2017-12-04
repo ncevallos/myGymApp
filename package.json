@@ -1,7 +1,7 @@
 {
   "name": "mern",
   "version": "1.0.0",
-  "description": "",
+  "description": "## About This Boilerplate",
   "main": "server.js",
   "scripts": {
     "server": "node server.js",
@@ -11,7 +11,7 @@
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Natasha Cevallos",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^3.5.0",
@@ -26,5 +26,13 @@
     "express-stormpath": "^4.0.0",
     "mongoose": "^4.11.7",
     "react-router-dom": "^4.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncevallos/myGymApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ncevallos/myGymApp/issues"
+  },
+  "homepage": "https://github.com/ncevallos/myGymApp#readme"
 }
