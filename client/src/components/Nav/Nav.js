@@ -40,6 +40,9 @@ const Navbar = props =>
         <li className={window.location.pathname === "/contactUs" ? "active" : ""}>
           <Link to="/contactUs">Contact Us</Link>
         </li>
+        <li className={window.location.pathname === "/admin" ? "active" : ""}>
+          <Link to="/classSchedules/admin">Admin/Log In</Link>
+        </li>
       </ul>
     </div>
 

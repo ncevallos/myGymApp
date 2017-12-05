@@ -9,6 +9,7 @@ import Schedules from "./pages/Schedules";
 import Admin from "./pages/Admin";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import LoginPage from './components/auth/LoginPage';
 
 const App = () =>
   <Router>
@@ -23,6 +24,7 @@ const App = () =>
         <Route exact path="/location" component={Location} />
         <Route exact path="/gymHours" component={Hours} />
         <Route exact path="/contactUs" component={Contactus} />
+        <Route exact path="/login" component={LoginPage}/>
         <Route component={NoMatch} />
       </Switch>
     </div>

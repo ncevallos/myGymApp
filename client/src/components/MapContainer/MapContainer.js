@@ -1,25 +1,75 @@
-import React from "react";
-
-
-export class Container extends React.Component {
-  render() {
-    if (!this.props.loaded) {
-      return <div>Loading...</div>
-    },
-
-    const style = {
-      width: '100vw',
-      height: '100vh'
+import React, { Component } from "react";
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+ 
+  const style = {
+    width: '400px',
+    height: '400px',
+    fontSize: 8
+  }
+  const markerStyle = {
+    fontSize: 8
+  }
+export class MapContainer extends Component {
+    constructor(props) {
+    super(props);
+    this.state = {
+      showingInfoWindow: false,
+      activeMarker: {},
+      selectedPlace: {},
     }
+    
+    // binding this to event-handler functions
+    this.onMarkerClick = this.onMarkerClick.bind(this);
+    this.onMapClicked = this.onMapClicked.bind(this);
+  }
+  
+  onMarkerClick = (props, marker, e) => {
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+  };
+ 
+  onMapClicked = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      })
+    }
+  };
+ 
+render() {
     return (
-      <div style={style}>
-        <Map google={this.props.google}
-          />
-      </div>
-    )
+     <Map
+          google={this.props.google}
+          style={style}
+          initialCenter={{
+            lat: 26.506960,
+            lng: -81.811690
+          }}
+          zoom={17}
+          onClick={this.onMapClicked}
+        >
+        <Marker onClick={this.onMarkerClick}
+            title={'Our Location'}
+            name={'8831 Business Park Drive, Fort Myers, FL 33912'}
+            style = {markerStyle}/>
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}
+          sytle = {markerStyle}>
+            <div>
+              <h1>{this.state.selectedPlace.name}</h1>
+            </div>
+        </InfoWindow>
+      </Map>
+    );
   }
 }
-
-export default GoogleApiComponent({
-  apiKey: AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo
+ 
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo"
 })(MapContainer)
+
