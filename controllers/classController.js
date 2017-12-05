@@ -10,7 +10,6 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findMonday: function(req, res) {
-    console.log("Finding Monday");
     db.ClassSchedule
       .find( { $text: { $search: "Monday" } })
       .sort({ timeOfDay: 1 })
@@ -18,7 +17,6 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findTuesday: function(req, res) {
-    console.log("Finding Tuesday");
     db.ClassSchedule
       .find( { $text: { $search: "Tuesday" } })
       .sort({ timeOfDay: -1 })
@@ -26,7 +24,6 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findWed: function(req, res) {
-    console.log("Finding Wednesday");
     db.ClassSchedule
       .find( { $text: { $search: "Wednesday" } })
       .sort({ timeOfDay: -1 })
@@ -34,7 +31,6 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findThurs: function(req, res) {
-    console.log("Finding Thursday");
     db.ClassSchedule
       .find( { $text: { $search: "Thursday" } })
       .sort({ timeOfDay: -1 })
@@ -42,7 +38,6 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findFri: function(req, res) {
-    console.log("Finding Friday");
     db.ClassSchedule
       .find( { $text: { $search: "Friday" } })
       .sort({ timeOfDay: -1 })
@@ -50,7 +45,6 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findWkend: function(req, res) {
-    console.log("Finding Wkend");
     db.ClassSchedule
       .find( { $text: { $search: "Saturday" || "Sunday"} })
       .sort({ timeOfDay: -1 })
