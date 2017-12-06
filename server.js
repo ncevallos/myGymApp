@@ -12,11 +12,11 @@ app.use(bodyParser.json());
 // Serve up static assets
 app.use(express.static("client/build"));
 
+app.use(routes);
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 // Add routes, both API and view
-app.use(routes);
 
 
 // Set up promises with mongoose
