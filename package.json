@@ -18,6 +18,8 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "@okta/okta-auth-js": "^1.11.0",
+    "@okta/okta-react": "0.0.9",
     "@okta/okta-signin-widget": "^2.3.0",
     "auth0-js": "^8.11.3",
     "axios": "^0.16.2",

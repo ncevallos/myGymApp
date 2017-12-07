@@ -5,6 +5,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import Jumbotron from "../../components/Jumbotron";
 import LtContain from "../../components/LtContain";
+import Schedules from "../Schedules";
 import API from "../../utils/API";
   
 
@@ -123,6 +124,7 @@ class Admin extends Component {
             </form>
             <br></br>
             <br></br>
+            <Schedules></Schedules>
           </Col>
         </Row>
       </Container>

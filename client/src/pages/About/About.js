@@ -24,8 +24,18 @@ const About = () =>
       <Row>
         <hr></hr>
         <Col size="md-12">
-          <p>
-            Our goal in creating My Gym APP was to provide an easy out of the box solution for smaller private gyms, and gym companies, to provide their members with a functional gym app, at a cheaper more affordable price.
+        <p>My Gym App was created as an out of the box, white label solution for small privately owned gyms, to be able to offer their members a personalized app experience. Our App provides the shell for what most gyms require, and the customization options, to make your version of the App fit your gym, go from there.</p>
+          <p><strong>
+            Technologies Used</strong>
+            <br></br>
+            <li> Okta – React Authentication</li>
+            <li> Google Maps – React – NPM Package</li>
+            <li> MERN Stack – </li><br></br>
+            <li>MongoDB</li>
+            <li>Express</li>
+            <li>React</li>
+            <li>Node.JS</li><br></br>
+
           </p>
 
         </Col>

@@ -1,6 +1,7 @@
 import React from 'react';
 import OktaSignIn from '@okta/okta-signin-widget';
 import Backbone from 'backbone';
+import Admin from "../../pages/Admin";
 
 export default class LoginPage extends React.Component{
   constructor(){
@@ -33,6 +34,8 @@ export default class LoginPage extends React.Component{
     Backbone.history.stop();
     this.widget.renderEl({el:this.loginContainer},
       (response) => {
+        console.log('HERERERER')
+        debugger;
         this.setState({user: response.claims.email});
       },
       (err) => {
@@ -54,6 +57,7 @@ export default class LoginPage extends React.Component{
         {this.state.user ? (
           <div className="container">
             <div>Welcome, {this.state.user}!</div>
+            <Admin></Admin>
             <button onClick={this.logout}>Logout</button>
           </div>
         ) : null}
