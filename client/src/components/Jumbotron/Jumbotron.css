@@ -2,14 +2,16 @@
   height: 200px;
   background-size: cover;
   background-position: center;
+  background-image: url("../../images/gym-background.jpg");
   position: relative;
   border-radius: 4px;
+  box-shadow: 10px 10px 5px #303030;
 }
 
 .hero::after {
   content: "";
   display: block;
-  opacity: .4;
+  opacity: .3;
   position: absolute;
   top: 0;
   bottom: 0;

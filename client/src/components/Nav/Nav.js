@@ -10,7 +10,10 @@ const Navbar = props =>
         <Link className="navbar-brand" to="/">
           My Gym APP
         </Link>
+      
       </div>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
       <ul className="nav navbar-nav">
         <li
           className={
@@ -44,6 +47,7 @@ const Navbar = props =>
           <Link to="/classSchedules/admin">Admin/Log In</Link>
         </li>
       </ul>
+    </div>
     </div>
 
   </nav>;

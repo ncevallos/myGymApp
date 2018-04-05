@@ -5,6 +5,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import Jumbotron from "../../components/Jumbotron";
 import LtContain from "../../components/LtContain";
 import API from "../../utils/API";
+import Footer from "../../components/Footer";
   
 
   const styletwo = {
@@ -137,10 +138,10 @@ class Schedules extends Component {
           <h1>My Gym</h1>
           <h2>Class Schedules</h2>
             </Jumbotron>
+        <hr></hr>
         </Col>
       </Row>
       <Row>
-      <hr></hr>
         <Col size="md-12">
           <Row>
           <Col size="md-2">
@@ -165,6 +166,7 @@ class Schedules extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
+            <br/>
           </Col>
           <Col size="md-2">
           <div style={header}>
@@ -187,6 +189,7 @@ class Schedules extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
+            <br/>
           </Col>
           <Col size="md-2">
           <div style={header}>
@@ -209,6 +212,7 @@ class Schedules extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
+            <br/>
           </Col>
           <Col size="md-2">
           <div style={header}>
@@ -231,6 +235,7 @@ class Schedules extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
+            <br/>
           </Col>
           <Col size="md-2">
           <div style={header}>
@@ -253,6 +258,7 @@ class Schedules extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
+            <br/>
           </Col>
           <Col size="md-2">
           <div style={header}>
@@ -275,6 +281,7 @@ class Schedules extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
+            <br/>
           </Col>
           </Row>
         </Col>     
@@ -282,6 +289,7 @@ class Schedules extends Component {
         <br></br>
         <br></br>
       </Container>
+    <Footer></Footer>
       </div>
     );
   }

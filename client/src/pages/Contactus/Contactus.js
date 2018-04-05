@@ -4,6 +4,7 @@ import { List, ListItem } from "../../components/List";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Input, TextArea, FormBtn } from "../../components/Form";
+import Footer from "../../components/Footer";
 
   const styletwo = {
     backgroundColor: "#737373",
@@ -94,6 +95,8 @@ import { Input, TextArea, FormBtn } from "../../components/Form";
           <br></br>
         </Row>
       </Container>
+      <br/>
+    <Footer></Footer>
       </div>
     );
   }

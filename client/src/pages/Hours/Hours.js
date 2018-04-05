@@ -2,12 +2,12 @@ import React from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import Jumbotron from "../../components/Jumbotron";
+import Footer from "../../components/Footer";
  
 
   const styletwo = {
     backgroundColor: "#737373",
     margin: 'auto',
-    height:'650px',
   };
   const header = {
     fontWeight: 'bold',
@@ -24,76 +24,78 @@ const Hours = () =>
           <h1>My Gym</h1>
           <h2>Gym Hours</h2>
             </Jumbotron>
+          <hr></hr>
         </Col>
       </Row>
       <Row>
-      <hr></hr>
         <Col size="md-12">
           <Row>
           <Col size="md-2">
-          <p style={header}>Monday
+          <p style={header}>Monday</p>
           <hr></hr>
           <br></br>
           <List><ListItem>
-          Open
+          <p style={header}>Open</p>
           <hr></hr>
-          5am - 12 pm
-          </ListItem></List></p>
+          <p style={header}>5am - 12 pm</p>
+          </ListItem></List>
           </Col>
           <Col size="md-2">
-          <p style={header}>Tuesday
+          <p style={header}>Tuesday</p>
           <hr></hr>
           <br></br>
           <List><ListItem>
-          Open
+          <p style={header}>Open</p>
           <hr></hr>
-          5am - 12 pm
-          </ListItem></List></p>
+          <p style={header}>5am - 12 pm</p>
+          </ListItem></List>
           </Col>
           <Col size="md-2">
-          <p style={header}>Wednesday
+          <p style={header}>Wednesday</p>
           <hr></hr>
           <br></br>
           <List><ListItem>
-          Open
+          <p style={header}>Open</p>
           <hr></hr>
-          5am - 12 pm
-          </ListItem></List></p>
+          <p style={header}>5am - 12 pm</p>
+          </ListItem></List>
           </Col>
           <Col size="md-2">
-          <p style={header}>Thursday
+          <p style={header}>Thursday</p>
           <hr></hr>
           <br></br>
           <List><ListItem>
-          Open
+          <p style={header}>Open</p>
           <hr></hr>
-          5am - 12 pm
-          </ListItem></List></p>
+          <p style={header}>5am - 12 pm</p>
+          </ListItem></List>
           </Col>
           <Col size="md-2">
-          <p style={header}>Friday
+          <p style={header}>Friday</p>
           <hr></hr>
           <br></br>
           <List><ListItem>
-          Open
+          <p style={header}>Open</p>
           <hr></hr>
-          5am - 12 pm
-          </ListItem></List></p>
+          <p style={header}>5am - 12 pm</p>
+          </ListItem></List>
           </Col>
           <Col size="md-2">
-          <p style={header}>Saturday/Sunday
+          <p style={header}>Saturday/Sunday</p>
           <hr></hr>
           <br></br>
           <List><ListItem>
-          Open
+          <p style={header}>Open</p>
           <hr></hr>
-          7am - 8 pm
-          </ListItem></List></p>
+          <p style={header}>7am - 8 pm</p>
+          </ListItem></List>
           </Col>
           </Row>
         </Col>
       </Row>
+      <br/>
     </Container>
+    <Footer></Footer>
   </div>;
 
 export default Hours;

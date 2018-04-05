@@ -6,8 +6,7 @@ import Footer from "../../components/Footer";
 
   const styletwo = {
     backgroundColor: "#737373",
-    margin: 'auto',
-    height:'650px',
+    margin: 'auto'
   };
 
 const Home = () =>
@@ -19,11 +18,13 @@ const Home = () =>
           <h1>My Gym</h1>
           <h2>Home</h2>
             </Jumbotron>
+        <hr></hr>
         </Col>
       </Row>
       <Row>
-        <hr></hr>
-        <Col size="md-12">
+        <Col size="md-1">
+        </Col>
+        <Col size="md-10">
         <p>Welcome to My Gym App! Click on a page to explore a little bit of what our App has to offer.
           </p>
 

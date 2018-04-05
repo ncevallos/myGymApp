@@ -46,15 +46,15 @@ render() {
           google={this.props.google}
           style={style}
           initialCenter={{
-            lat: 26.506960,
-            lng: -81.811690
+            lat: 26.464330,
+            lng: -81.773407
           }}
           zoom={17}
           onClick={this.onMapClicked}
         >
         <Marker onClick={this.onMarkerClick}
             title={'Our Location'}
-            name={'8831 Business Park Drive, Fort Myers, FL 33912'}
+            name={'10501 FGCU Blvd, Fort Myers, FL 33965'}
             style = {markerStyle}/>
         <InfoWindow
           marker={this.state.activeMarker}
